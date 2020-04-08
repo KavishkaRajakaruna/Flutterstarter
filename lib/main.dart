@@ -15,21 +15,27 @@ class Home extends StatelessWidget {
           style: TextStyle(
             fontSize:30.0,
             fontWeight: FontWeight.bold,
-            color: Colors.grey,
+            color: Colors.white,
             fontFamily: 'Poppins',
           ),
           ),
         centerTitle: true,
         backgroundColor: Colors.redAccent,
-      ), //AppBar
+      ), 
       body: Center(
-        child:Text('Hello Kavishka'),
-        ),
+        child:IconButton(
+          onPressed: (){},
+          icon: Icon(Icons.android),
+          color: Colors.teal,
+          iconSize: 50.0,
+          )
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child:Text('Click') ,
         backgroundColor: Colors.purpleAccent,
         ) ,
-    );
+    ); 
   }
 }
+
