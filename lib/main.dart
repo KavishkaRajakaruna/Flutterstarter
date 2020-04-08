@@ -22,14 +22,21 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.redAccent,
       ), 
-      body: Center(
-        child:IconButton(
-          onPressed: (){},
-          icon: Icon(Icons.android),
-          color: Colors.teal,
-          iconSize: 50.0,
+      body: Row(
+        mainAxisAlignment:MainAxisAlignment.spaceAround ,
+        children: <Widget>[
+          Text('Hello'),
+          FlatButton(onPressed: (){}, 
+          child: Text('kavishka'),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            child: Text('Its Me'),
+            
           )
+        ],
       ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child:Text('Click') ,
